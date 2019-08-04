@@ -10,7 +10,6 @@ class TodoFilter extends Component {
         {categories.map(category => (
           <button
             style={{ cursor: "pointer", outline: "none" }}
-            href="/"
             onClick={() => filterTodo(category)}
             key={category}
             className={filterCategory === category ? "item active" : "item"}
